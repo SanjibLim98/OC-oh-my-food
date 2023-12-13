@@ -1,3 +1,85 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+} /*Universal box sizing with inheritance */
+html {
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .main-container {
+    max-width: 475px;
+  }
+}
+/* sm */
+@media (min-width: 640px) {
+  .main-container {
+    max-width: 640px;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 768px;
+  }
+}
+/* lg */
+@media (min-width: 1024px) {
+  .main-container {
+    max-width: 1024x;
+  }
+}
+/* xl */
+@media (min-width: 1536px) {
+  .main-container {
+    max-width: 1536px;
+  }
+}
+/* 2xl */
+@media (min-width: 475px) {
+  .main-container {
+    max-width: 475px;
+  }
+}
+/*header*/
+.header_card {
+  background-color: #fff;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.header_card .logo {
+  width: 180px;
+  height: auto;
+}
+
+.location {
+  padding: 15px 0;
+  align-items: center;
+  text-align: center;
+  background-color: #F1F1F1;
+  width: 100%;
+}
+.location i {
+  padding-right: 12px;
+}
+.location a {
+  font-size: 14px;
+}
+
 .restaurants {
   width: 100%;
   background-color: rgb(243, 243, 243);
@@ -20,7 +102,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 75%;
+  height: 55%;
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
 }
@@ -30,9 +112,21 @@
   width: 30%;
 }
 
-.main-container {
+.bookMeal-container {
+  /*passing arg to mixin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*calling mixin with desired format in the parameter */
+  background-color: #f8f8f8;
   width: 100%;
-  box-sizing: border-box;
-  max-width: 375px;
-  min-width: 375px;
+}
+.bookMeal-container h3 {
+  padding-top: 15px;
+  font-size: 25px;
+}
+.bookMeal-container p {
+  font-size: 23px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

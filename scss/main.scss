@@ -1,20 +1,26 @@
-@import './variables';
-@import './restaurants';
 @import './mediaQuery';
+@import './variables';
+@import './header';
+@import './mixin';
+@import './restaurants';
+
 
 @function weight($weight-name) {  /*mixins and functions are similar. However, functions should be used to return values, mixins should define styles. */
 
     @return map-get($font-weights, $weight-name);
 }
 
-@mixin flexCenter ($direction) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: ($direction);
+.bookMeal-container {
+    @include flexCenter(column); /*calling mixin with desired format in the parameter */
+    background-color: $main-background;
+    width: 100%;
+    h3 {
+        padding-top: 15px;
+        font-size: 25px;
+    }
+    p {
+        
+        font-size: 23px;
+        text-align: center;
+    }
 }
-
-
-
-
-
