@@ -141,4 +141,31 @@ html {
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
+}
+
+/*how it works */
+.howItWorks {
+  padding: 10px;
+}
+.howItWorks h3 {
+  padding: 10px;
+  font-size: 25px;
+}
+.howItWorks section {
+  /*passing arg to mixin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.howItWorks .hiwCard {
+  background-color: #f8f8f8;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  width: 80%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

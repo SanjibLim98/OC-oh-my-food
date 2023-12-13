@@ -35,3 +35,29 @@
         
       }
 }
+
+/*how it works */
+
+.howItWorks {
+    padding: 10px;
+    h3 {
+        padding: 10px;
+        font-size: 25px;
+    }
+    section {
+        @include flexCenter(column);
+    }
+    .hiwCard {
+        background-color: $main-background;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        width: 80%;
+        height: 65px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 20px;
+        margin-bottom: 20px;
+        
+    }
+}
