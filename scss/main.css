@@ -39,15 +39,15 @@ html {
   }
 }
 /* xl */
-@media (min-width: 1536px) {
+@media (min-width: 1280px) {
   .main-container {
-    max-width: 1536px;
+    max-width: 1280px;
   }
 }
 /* 2xl */
-@media (min-width: 475px) {
+@media (min-width: 1536px) {
   .main-container {
-    max-width: 475px;
+    max-width: 1536px;
   }
 }
 /*header*/
@@ -70,7 +70,7 @@ html {
   padding: 15px 0;
   align-items: center;
   text-align: center;
-  background-color: #F1F1F1;
+  background-color: #ececec;
   width: 100%;
 }
 .location i {
@@ -84,26 +84,50 @@ html {
   width: 100%;
   background-color: rgb(243, 243, 243);
   box-sizing: border-box;
+}
+.restaurants h3 {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.restaurants section {
+  /*passing arg to mixin */
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .restaurants article {
   background-color: white;
   border-radius: 15px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
-  height: 210px;
-  width: 95%;
-  justify-content: center;
-  align-items: center;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  height: 220px;
+  width: 90%;
+  margin-bottom: 20px;
 }
 .restaurants article img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 55%;
+  height: 70%;
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
+}
+.restaurants article .card-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+}
+.restaurants article .card-content .card-title {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.restaurants article .card-content .card-subtitle {
+  margin-top: 0;
+  margin-left: 10px;
+}
+.restaurants article .card-content .heart-icon {
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 .restaurantCard a img {
@@ -118,7 +142,7 @@ html {
   align-items: center;
   flex-direction: column;
   /*calling mixin with desired format in the parameter */
-  background-color: #f8f8f8;
+  background-color: #f7f7f7;
   width: 100%;
 }
 .bookMeal-container h3 {
@@ -145,10 +169,12 @@ html {
 
 /*how it works */
 .howItWorks {
-  padding: 10px;
+  background-color: #fff;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  width: 100%;
+  padding: 20px;
 }
 .howItWorks h3 {
-  padding: 10px;
   font-size: 25px;
 }
 .howItWorks section {
@@ -159,13 +185,21 @@ html {
   flex-direction: column;
 }
 .howItWorks .hiwCard {
-  background-color: #f8f8f8;
+  background-color: rgb(244, 244, 244);
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   width: 80%;
   height: 65px;
+  /*passing arg to mixin */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   border-radius: 20px;
   margin-bottom: 20px;
+}
+.howItWorks .hiwCard a {
+  text-align: center;
+}
+.howItWorks .hiwCard i {
+  margin-right: 20px;
 }/*# sourceMappingURL=main.css.map */
