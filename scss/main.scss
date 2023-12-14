@@ -73,3 +73,39 @@
         
     }
 }
+
+/* footer*/
+
+footer {
+    background-color: $footer-background;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        img {
+            width: 120px;
+            height: auto;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        ul {
+            list-style: none;      
+            li {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    i {
+                        margin-right: 15px;
+                    }
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+   
+}
