@@ -18,7 +18,7 @@ box-sizing: border-box;
 /* xs */
 @media (min-width: 475px) {
     .main-container {
-        max-width: 475px;
+        max-width: 475px; /*makes the container shirnk when the viewport touches */
     }
 }
 

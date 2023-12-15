@@ -17,7 +17,7 @@ html {
 /* xs */
 @media (min-width: 475px) {
   .main-container {
-    max-width: 475px;
+    max-width: 475px; /*makes the container shirnk when the viewport touches */
   }
 }
 /* sm */
@@ -83,13 +83,12 @@ html {
 .restaurants {
   width: 100%;
   background-color: rgb(243, 243, 243);
-  box-sizing: border-box;
 }
 .restaurants h3 {
   padding-top: 50px;
   padding-left: 20px;
 }
-.restaurants section {
+.restaurants .restaurant-options {
   /*passing arg to mixin */
   display: flex;
   justify-content: center;
@@ -100,9 +99,13 @@ html {
   background-color: white;
   border-radius: 15px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  height: 220px;
+  height: 225px;
   width: 90%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  transition: transform 0.4s, background-color 0.3s;
+}
+.restaurants article:hover {
+  background-color: rgba(255, 255, 255, 0.774);
 }
 .restaurants article img {
   -o-object-fit: cover;
@@ -113,22 +116,30 @@ html {
   border-top-left-radius: inherit;
 }
 .restaurants article .card-content {
+  width: 100%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurants article .card-content .card-txt {
   display: flex;
   flex-direction: column;
-  margin-top: -10px;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 10px;
 }
-.restaurants article .card-content .card-title {
-  margin-bottom: 0;
-  margin-left: 10px;
+.restaurants article .card-content .card-txt .card-title {
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
-.restaurants article .card-content .card-subtitle {
-  margin-top: 0;
-  margin-left: 10px;
+.restaurants article .card-content .card-txt .card-subtitle {
+  margin: 0;
 }
 .restaurants article .card-content .heart-icon {
-  margin-left: auto;
+  margin: 25px;
   margin-right: 30px;
-  margin-top: -40px;
 }
 
 .bookMeal-container {
@@ -151,7 +162,7 @@ html {
 }
 .bookMeal-container button[type=submit] {
   border: 0;
-  background: linear-gradient(to bottom, rgb(228, 129, 228), #b738e9);
+  background: linear-gradient(to bottom, rgb(250, 137, 250), #b738e9);
   color: white;
   border-radius: 25px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.25));
@@ -161,6 +172,11 @@ html {
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
+  transition: transform 0.4s, background-color 0.5s;
+}
+.bookMeal-container button[type=submit]:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(to bottom, rgba(250, 137, 250, 0.854), rgba(183, 56, 233, 0.8235294118));
 }
 
 /*how it works */

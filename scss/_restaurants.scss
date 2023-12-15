@@ -3,25 +3,31 @@
 .restaurants {
     width: 100%;
     background-color: rgb(243, 243, 243);
-    box-sizing: border-box;
-    
+   
     h3 {
         padding-top: 50px;
         padding-left: 20px;
     }
-    section {
+    .restaurant-options {
         @include flexCenter(column);
+        
+     
     }
-
+    
+   
     article {
+
         background-color: white;
         border-radius: 15px;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        height: 220px;
+        height: 225px;
         width: 90%; 
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        transition: transform 0.4s, background-color 0.3s; 
+        &:hover {
+            background-color: $restaurant-hover;
+        }
         
-           
         img {
             object-fit: cover;
             width: 100%;
@@ -30,27 +36,36 @@
             border-top-left-radius: inherit;
         }
 
-        .card-content {
+       .card-content {
+        width: 100%;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .card-txt {
+           
             display: flex;
             flex-direction: column;
-            margin-top: -10px;
-            
-
+            box-sizing: border-box;
+            text-align: left;
+            padding-top: 10px;
             .card-title {
-                margin-bottom: 0;
-                margin-left: 10px;
+                
+                display: flex;
+                padding: 0;
+                margin: 0;
             }
             .card-subtitle {
-                margin-top: 0;
-                margin-left: 10px;
-            }
-
-            .heart-icon {
-                margin-left: auto;
-                margin-right: 30px;
-                margin-top: -40px;
+                margin: 0;
                 
+                }
             }
+        .heart-icon {
+            margin: 25px;
+            margin-right: 30px;
+        }
+
         }
     }
 }
