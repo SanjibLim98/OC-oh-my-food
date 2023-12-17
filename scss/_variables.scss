@@ -1,7 +1,14 @@
+@import './mediaQuery';
+@import './variables';
+@import './header';
+@import './mixin';
+@import './restaurants';
+@import './menu';
+
 $main-background: #f7f7f7;
 $hiw-card: rgb(244, 244, 244);
 $footer-background: rgb(60, 60, 60);
 $purple-color-gradient: linear-gradient(to bottom, rgb(250, 137, 250), #b738e9);
 $purple-hover: linear-gradient(to bottom, rgba(250, 137, 250, 0.854), #b738e9d2);
 
-$restaurant-hover: rgba(255, 255, 255, 0.774);
+$restaurant-hover: rgba(243, 243, 243, 0.903);
