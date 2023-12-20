@@ -12,3 +12,15 @@
     border-bottom: 3px solid;
     border-color: $border-color;
 }
+
+@mixin roboto-font($size, $weight) {
+    font-family: 'Roboto', sans-serif;
+    font-size: $size;
+    font-weight:$weight;
+}
+
+@mixin logo-font($size, $weight) {
+    font-family: 'Shrikhand', serif;
+    font-size: $size;
+    font-weight:$weight;
+}

@@ -107,6 +107,10 @@ html {
 }
 .menu-list .title-container .menu-title {
   margin-top: 20px;
+  display: flex;
+  font-family: "Shrikhand", serif;
+  font-size: 25px;
+  font-weight: 500;
 }
 .menu-list .title-container .menu-subtitle {
   padding-left: 0;
@@ -114,6 +118,37 @@ html {
   width: 40px;
   border-bottom: 3px solid;
   border-color: rgb(162, 255, 224);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.menu-list .card-content {
+  width: 100%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-list .card-content .title-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 10px;
+  margin: 20px;
+}
+.menu-list .card-content .title-container .menu-title {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.menu-list .card-content .title-container .menu-subtitle {
+  margin: 0;
+}
+.menu-list .card-content .heart-icon {
+  margin: 30px;
+  margin-right: 60px;
+  font-size: 25px;
 }
 .menu-list .menu-items {
   width: 100%;
@@ -155,16 +190,25 @@ html {
   padding: 0;
   margin: 0;
   font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
 }
 .menu-list .menu-items .item article .card-content .card-txt .card-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+  font-weight: 300;
   padding: 5px 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 .menu-list .menu-items .item article .card-content .price {
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+  font-weight: 700;
   padding-right: 16px;
 }
 .menu-list .menu-items .item article .card-content .price p {
-  font-size: 16px;
+  font-size: 12px;
 }
 .menu-list .menu-items .item order-button {
   align-items: center;
@@ -202,13 +246,22 @@ footer .footer-column {
 }
 footer .footer-column h4 {
   margin: 0;
-  padding: 15px 15px;
+  padding-top: 15px;
+  padding-left: 15px;
   color: white;
+  font-family: "Shrikhand", serif;
+  font-size: medium;
+  font-weight: 300;
 }
 footer .footer-column ul {
   list-style: none;
   padding: 0;
   margin-left: 15px;
+}
+footer .footer-column ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+  font-weight: 500;
 }
 footer .footer-column ul li i {
   color: white;
@@ -218,10 +271,10 @@ footer .footer-column ul li a {
   color: white;
 }
 footer .footer-column ul li .footer-space {
-  margin: 10px;
+  margin: 12px;
 }
 footer .footer-column ul li .footer-space2 {
-  margin: 5px;
+  margin: 7px;
 }
 footer .footer-column ul li a:hover {
   text-decoration: underline;

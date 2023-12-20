@@ -63,18 +63,62 @@
 
         .menu-title {
             margin-top: 20px;
+            display: flex;
+            
+            @include logo-font(25px, 500);
         }
+
+    
         
         .menu-subtitle {
            
             @include borderUnder;
-            
+            @include roboto-font(16px, 500);
         }
     }
+
+    .card-content {
+        width: 100%;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .title-container {
+           
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            text-align: left;
+            padding-top: 10px;
+            margin: 20px;
+            .menu-title {
+                
+                display: flex;
+                padding: 0;
+                margin: 0;
+            }
+            .menu-subtitle {
+                margin: 0;
+                
+                }
+            }
+        .heart-icon {
+            margin: 30px;
+            margin-right: 60px;
+            font-size: 25px;
+        }
+
+        }
+
+
+
+    
     
 
     .menu-items{
         width: 100%;
+        
         
         .item {
             @include flexCenter(column);
@@ -106,25 +150,28 @@
                     box-sizing: border-box;
                     text-align: left;
                     padding-top: 10px;
+                    
                     .card-title {
                         
                         display: flex;
                         padding: 0;
                         margin: 0;
                         font-size: 20px;
+                         @include roboto-font(15px, 700);
                      
                     }
                     .card-subtitle {
-        
+                        @include roboto-font(small, 300);
                         padding: 5px 0;
-                        font-size: 14px;
+                        font-size: 12px;
                         
                         }
                     }
                 .price {
+                    @include roboto-font(small, 700);
                     padding-right: 16px;
                     p {
-                        font-size: 16px;
+                        font-size: 12px;
                     }
                     
                 }
@@ -182,17 +229,19 @@ footer {
   
       h4 {
         margin: 0;
-        padding: 15px 15px;
+        padding-top: 15px;
+        padding-left: 15px;
         color: white;
+        @include logo-font(medium, 300);
       }
   
       ul {
         list-style: none;
         padding: 0;
         margin-left: 15px;
-  
+        
         li {
-         
+         @include roboto-font(small, 500);
      
           i {
             color: white;
@@ -204,10 +253,10 @@ footer {
             color: white;
           }
           .footer-space {
-            margin: 10px;
+            margin: 12px;
           }
           .footer-space2 {
-            margin: 5px;
+            margin: 7px;
           }
   
           a:hover {
