@@ -1,0 +1,186 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+} /*Universal box sizing with inheritance */
+html {
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .main-container {
+    max-width: 475px; /*makes the container shirnk when the viewport touches */
+  }
+}
+/* sm */
+@media (min-width: 640px) {
+  .main-container {
+    max-width: 640px;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 768px;
+  }
+}
+/* lg */
+@media (min-width: 1024px) {
+  .main-container {
+    max-width: 1024x;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  .main-container {
+    max-width: 1280px;
+  }
+}
+/* 2xl */
+@media (min-width: 1536px) {
+  .main-container {
+    max-width: 1536px;
+  }
+}
+.header_card {
+  background-color: #fff;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.header_card .logo {
+  width: 180px;
+  height: auto;
+}
+
+.kit-image {
+  width: 100%;
+}
+.kit-image img {
+  position: relative;
+  width: inherit;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-list {
+  /*passing arg to mixin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*calling mixin with desired format in the parameter */
+  background-color: #ffffff;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  position: relative;
+  bottom: 50px;
+}
+.menu-list h3 {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 25px;
+  margin: 0;
+}
+.menu-list p {
+  width: 100%;
+  font-size: 23px;
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+.menu-list .title-container {
+  width: 100%;
+}
+.menu-list .title-container .menu-title {
+  margin-top: 20px;
+}
+.menu-list .title-container .menu-subtitle {
+  padding-left: 0;
+  margin-left: 16px;
+  width: 40px;
+  border-bottom: 3px solid;
+  border-color: rgb(162, 255, 224);
+}
+.menu-list .menu-items {
+  width: 100%;
+}
+.menu-list .menu-items .item {
+  /*passing arg to mixin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+.menu-list .menu-items .item article {
+  background-color: white;
+  border-radius: 15px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  height: auto;
+  width: 90%;
+  margin-top: 20px;
+  transition: transform 0.4s, background-color 0.3s;
+}
+.menu-list .menu-items .item article .card-content {
+  width: 100%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-list .menu-items .item article .card-content .card-txt {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 10px;
+}
+.menu-list .menu-items .item article .card-content .card-txt .card-title {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+.menu-list .menu-items .item article .card-content .card-txt .card-subtitle {
+  padding: 5px 0;
+  font-size: 14px;
+}
+.menu-list .menu-items .item article .card-content .price {
+  padding-right: 16px;
+}
+.menu-list .menu-items .item article .card-content .price p {
+  font-size: 16px;
+}
+.menu-list button[type=submit] {
+  border: 0;
+  background: linear-gradient(to bottom, rgb(250, 137, 250), #b738e9);
+  color: white;
+  border-radius: 25px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.25));
+  padding: 15px 15px;
+  margin: 20px 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.4s, background-color 0.5s;
+}
+.menu-list button[type=submit]:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(to bottom, rgba(250, 137, 250, 0.854), rgba(183, 56, 233, 0.8235294118));
+}/*# sourceMappingURL=menu.css.map */

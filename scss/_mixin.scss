@@ -4,3 +4,11 @@
     align-items: center;
     flex-direction: ($direction);
 }
+
+@mixin borderUnder {
+    padding-left: 0;
+    margin-left: 16px;
+    width: 40px;
+    border-bottom: 3px solid;
+    border-color: $border-color;
+}

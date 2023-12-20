@@ -11,7 +11,57 @@ html {
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .main-container {
+    max-width: 475px; /*makes the container shirnk when the viewport touches */
+  }
+}
+/* sm */
+@media (min-width: 640px) {
+  .main-container {
+    max-width: 640px;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 768px;
+  }
+}
+/* lg */
+@media (min-width: 1024px) {
+  .main-container {
+    max-width: 1024x;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  .main-container {
+    max-width: 1280px;
+  }
+}
+/* 2xl */
+@media (min-width: 1536px) {
+  .main-container {
+    max-width: 1536px;
+  }
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+} /*Universal box sizing with inheritance */
+html {
   box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 /* xs */
@@ -147,414 +197,6 @@ html {
   margin-right: 30px;
 }
 
-.n-y88twmgwa-icon {
-  position: absolute;
-  top: 63px;
-  left: calc(50% - 187.5px);
-  width: 375px;
-  height: 275px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.background {
-  position: absolute;
-  top: 283px;
-  left: 0;
-  border-radius: var(--br-21xl) var(--br-21xl) 0 0;
-  background-color: var(--background);
-  width: 375px;
-  height: 1307px;
-}
-
-.logoohmyfood,
-.ohmyfood {
-  position: absolute;
-  top: 0;
-  left: 8.12%;
-}
-
-.logoohmyfood {
-  height: 57.14%;
-  width: 52.53%;
-  top: 22.22%;
-  right: 23.73%;
-  bottom: 20.63%;
-  left: 23.73%;
-  flex-shrink: 0;
-}
-
-.icongoback-child {
-  position: absolute;
-  top: calc(50% - 15px);
-  left: calc(50% - 15px);
-  width: 30px;
-  height: 30px;
-}
-
-.vector-icon {
-  position: absolute;
-  height: 53.33%;
-  width: 57.33%;
-  top: 23.33%;
-  right: 22.67%;
-  bottom: 23.33%;
-  left: 20%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.icongoback {
-  position: absolute;
-  height: 47.62%;
-  width: 8%;
-  top: 26.98%;
-  right: 87.47%;
-  bottom: 25.4%;
-  left: 4.53%;
-  cursor: pointer;
-}
-
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--white);
-  box-shadow: var(--shadow-badge);
-  width: 375px;
-  height: 63px;
-}
-
-.the-bay-leaf {
-  margin: 0;
-}
-
-.the-bay-leaf-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  width: 341px;
-  height: 27px;
-}
-
-.the-bay-leaf-wrapper {
-  position: relative;
-  width: 341px;
-  height: 27px;
-  font-size: 28px;
-  color: var(--black);
-  font-family: var(--font-shrikhand);
-}
-
-.starters {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  text-transform: uppercase;
-  font-weight: 300;
-  display: inline-block;
-}
-
-.cardtitlemenusection-child {
-  position: absolute;
-  height: 11.11%;
-  width: 15.64%;
-  top: 94.44%;
-  right: 84.91%;
-  bottom: -5.56%;
-  left: -0.55%;
-  border-top: 3px solid var(--green);
-  box-sizing: border-box;
-}
-
-.cardtitlemenusection {
-  position: relative;
-  width: 275px;
-  height: 27px;
-  font-size: var(--button-size);
-}
-
-.description,
-.name {
-  align-self: stretch;
-  position: relative;
-  font-weight: 500;
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 21px;
-  flex-shrink: 0;
-}
-
-.description {
-  font-size: var(--font-size-mini);
-  font-weight: 300;
-  white-space: nowrap;
-  height: 19px;
-}
-
-.dish {
-  flex: 1;
-  height: 42px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-8xs);
-}
-
-.b {
-  position: relative;
-}
-
-.dishandprice,
-.price {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.price {
-  flex-shrink: 0;
-  align-items: flex-start;
-  text-align: center;
-  font-size: var(--font-size-mini);
-  color: var(--grey);
-}
-
-.dishandprice {
-  flex: 1;
-  align-items: flex-end;
-  padding: var(--padding-mini);
-  gap: var(--gap-8xs);
-  z-index: 0;
-}
-
-.select-button-child {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 0 var(--br-mini) var(--br-mini) 0;
-  background-color: var(--green);
-  width: 59px;
-  height: 69px;
-}
-
-.iconcheck {
-  position: absolute;
-  top: 25px;
-  right: 19.4px;
-  width: 20px;
-  height: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.select-button {
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  right: -60px;
-  width: 59px;
-  height: 69px;
-  z-index: 1;
-}
-
-.card {
-  border-radius: 15.04px;
-  background-color: var(--white);
-  box-shadow: 0 4px 15.04px rgba(0, 0, 0, 0.1);
-  width: 349px;
-  height: 69px;
-  overflow: hidden;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-}
-
-.card,
-.card2,
-.cardtitlemenusection-parent {
-  flex-shrink: 0;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.card2 {
-  border-radius: 15.04px;
-  background-color: var(--white);
-  width: 349px;
-  height: 69px;
-  overflow: hidden;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-}
-
-.cardtitlemenusection-parent {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--gap-xs);
-}
-
-.button-child {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 100%;
-  right: 0;
-  bottom: -100%;
-  left: 0;
-  border-radius: 25px;
-  background: linear-gradient(193.33deg, #9356dc, #ff79da);
-  box-shadow: var(--shadow-button);
-}
-
-.order {
-  position: absolute;
-  top: 32%;
-  left: 39.25%;
-  font-weight: 500;
-}
-
-.button {
-  position: relative;
-  width: 186px;
-  height: 50px;
-  text-align: center;
-  font-size: var(--button-size);
-  color: var(--white);
-}
-
-.ohmyfood1 {
-  position: absolute;
-  height: 100%;
-  width: 98.99%;
-  top: 0;
-  left: 0;
-  display: inline-block;
-}
-
-.logoohmyfood1 {
-  position: relative;
-  width: 139px;
-  height: 27px;
-}
-
-.suggest-a-restaurant1 {
-  position: absolute;
-  top: calc(50% - 9.5px);
-  left: 22px;
-  font-weight: 500;
-  display: inline-block;
-  width: 168px;
-}
-
-.vector-icon1 {
-  position: absolute;
-  top: calc(50% - 7.5px);
-  left: 0;
-  width: 11px;
-  height: 13px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.suggest-a-restaurant {
-  position: relative;
-  width: 190px;
-  height: 19px;
-}
-
-.vector-icon2 {
-  position: absolute;
-  height: 68.42%;
-  width: 6.26%;
-  top: 21.05%;
-  right: 93.74%;
-  bottom: 10.53%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.legal-notice {
-  position: relative;
-  display: inline-block;
-  width: 130px;
-  height: 20px;
-  flex-shrink: 0;
-}
-
-.links {
-  align-items: flex-start;
-  gap: 7px;
-  font-size: var(--button-size);
-  font-family: var(--button);
-}
-
-.footer,
-.group-parent,
-.links {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.footer {
-  background-color: var(--grey);
-  width: 375px;
-  align-items: flex-start;
-  padding: 22px 25px;
-  box-sizing: border-box;
-  gap: 16px;
-  color: var(--white);
-  font-family: var(--font-shrikhand);
-}
-
-.group-parent {
-  position: absolute;
-  top: 315px;
-  left: calc(50% - 187.5px);
-  align-items: center;
-  gap: 40px;
-  text-align: left;
-  font-size: var(--font-size-lg);
-  color: var(--color-black);
-  font-family: var(--button);
-}
-
-.like-icon {
-  position: absolute;
-  top: 321px;
-  left: 325px;
-  width: 22px;
-  height: 21px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.menu-the-bay-leaf {
-  position: relative;
-  background-color: var(--white);
-  width: 100%;
-  height: 1590px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 30px;
-  color: var(--black);
-  font-family: var(--font-shrikhand);
-}
-
 .bookMeal-container {
   /*passing arg to mixin */
   display: flex;
@@ -659,4 +301,12 @@ footer .footer-column ul li a i {
 }
 footer .footer-column ul li a:hover {
   text-decoration: underline;
+}
+
+.kit-image {
+  width: 100%;
+}
+.kit-image img {
+  width: 200px;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
