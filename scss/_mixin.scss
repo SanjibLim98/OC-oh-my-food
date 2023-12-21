@@ -24,3 +24,55 @@
     font-size: $size;
     font-weight:$weight;
 }
+
+@mixin footer-styles {
+    background-color: $footer-background;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+  
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  
+      h4 {
+        margin: 0;
+        padding-top: 15px;
+        padding-left: 15px;
+        color: white;
+        @include logo-font(medium, 300);
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-left: 15px;
+  
+        li {
+          @include roboto-font(small, 500);
+  
+          i {
+            color: white;
+          }
+  
+          a {
+            text-decoration: none;
+            color: white;
+          }
+  
+          .footer-space {
+            margin: 12px;
+          }
+  
+          .footer-space2 {
+            margin: 7px;
+          }
+  
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
