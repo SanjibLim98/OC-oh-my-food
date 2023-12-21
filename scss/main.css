@@ -163,6 +163,28 @@ html {
   background-color: rgba(243, 243, 243, 0.903);
   transform: translateY(-1px);
 }
+.restaurants .restaurant-options article .badge-new {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 10px;
+  right: 18px;
+  width: 100%;
+}
+.restaurants .restaurant-options article .badge-new .new {
+  background-color: #99E2D0;
+  width: 90px;
+  border-radius: 5px;
+  text-align: center;
+}
+.restaurants .restaurant-options article .badge-new .new p {
+  color: #008766;
+  margin: 0;
+  padding: 9px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
 .restaurants .restaurant-options article img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -272,8 +294,8 @@ html {
   flex-direction: column;
 }
 .howItWorks .hiwCard {
-  background-color: rgb(244, 244, 244);
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.12));
+  background-color: #F6F6F6;
+  filter: drop-shadow(1px 4px 2px rgba(0, 0, 0, 0.062));
   width: 90%;
   height: 65px;
   display: flex;
@@ -284,6 +306,29 @@ html {
   font-weight: 500;
   border-radius: 20px;
   margin-bottom: 20px;
+}
+.howItWorks .hiwCard .badge-number {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  top: 25px;
+  right: 9px;
+  width: 100%;
+}
+.howItWorks .hiwCard .badge-number .num {
+  background-color: #9356DC;
+  width: 20px;
+  border-radius: 30px;
+  text-align: center;
+}
+.howItWorks .hiwCard .badge-number .num p {
+  color: white;
+  margin: 0;
+  padding: 1px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 }
 .howItWorks .hiwCard .contain-card {
   display: flex;
@@ -302,7 +347,7 @@ html {
 
 /* footer*/
 footer {
-  background-color: rgb(60, 60, 60);
+  background-color: #353535;
   padding: 5px;
   display: flex;
   justify-content: flex-start;

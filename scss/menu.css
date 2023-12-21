@@ -234,7 +234,7 @@ html {
 }
 
 footer {
-  background-color: rgb(60, 60, 60);
+  background-color: #353535;
   padding: 5px;
   display: flex;
   justify-content: flex-start;
