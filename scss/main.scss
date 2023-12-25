@@ -67,6 +67,9 @@
         align-items: center;
         justify-content: space-between;
 
+        border-radius: 20px;
+        margin-bottom: 20px;
+
         @include roboto-font(15px, 500);
 
         .badge-number {
@@ -77,8 +80,6 @@
             align-items: center;
             top: 25px;
             right: 9px;
-            
-
             width: 100%;
             
             .num {
@@ -97,29 +98,45 @@
                 
             }
         }
-        
-       
+
+           
         .contain-card {
           
             display: flex;
             width: 100%;
-            margin-left: 55px;
             align-items: center;
-        }
-        a {
-            text-align:left;
-            display: flex;
-            align-items: center;
-        }
+            justify-content: center;
 
-        border-radius: 20px;
-        margin-bottom: 20px;
+            .hiw-icon{
+                position: relative;
+                right: 10px;
+                transition: color 0.5s; 
+            }
 
-        i {
+            .hiw-icon2{
+                position: relative;
+                right: 25px;
+                transition: color 0.5s; 
+            }
+
+            .hiw-icon3{
+                margin: 15px;
+                transition: color 0.5s; 
+            }
             
-            margin-right: 20px;
-            
+            i {
+
+                margin: 5px;
+                color: grey;
+                position: relative;
+                transition: color 0.25s; 
+                
+                &:hover {
+                    color: $num-badge;
+                }
+            }
         }
+        
         
     }
 }

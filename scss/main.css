@@ -127,7 +127,9 @@ html {
   padding-right: 12px;
 }
 .location a {
-  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .restaurants {
@@ -207,7 +209,6 @@ html {
 .restaurants .restaurant-options article .card-content .card-txt {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   text-align: left;
   padding-top: 10px;
 }
@@ -301,11 +302,11 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 20px;
+  margin-bottom: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
-  border-radius: 20px;
-  margin-bottom: 20px;
 }
 .howItWorks .hiwCard .badge-number {
   position: absolute;
@@ -333,16 +334,31 @@ html {
 .howItWorks .hiwCard .contain-card {
   display: flex;
   width: 100%;
-  margin-left: 55px;
   align-items: center;
+  justify-content: center;
 }
-.howItWorks .hiwCard a {
-  text-align: left;
-  display: flex;
-  align-items: center;
+.howItWorks .hiwCard .contain-card .hiw-icon {
+  position: relative;
+  right: 10px;
+  transition: color 0.5s;
 }
-.howItWorks .hiwCard i {
-  margin-right: 20px;
+.howItWorks .hiwCard .contain-card .hiw-icon2 {
+  position: relative;
+  right: 25px;
+  transition: color 0.5s;
+}
+.howItWorks .hiwCard .contain-card .hiw-icon3 {
+  margin: 15px;
+  transition: color 0.5s;
+}
+.howItWorks .hiwCard .contain-card i {
+  margin: 5px;
+  color: grey;
+  position: relative;
+  transition: color 0.25s;
+}
+.howItWorks .hiwCard .contain-card i:hover {
+  color: #9356DC;
 }
 
 /* footer*/
