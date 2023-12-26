@@ -1,0 +1,41 @@
+@import './variables';
+@import './mixin';
+@import './mediaQuery';
+
+.bookMeal-container {
+    @include flexCenter(column); /*calling mixin with desired format in the parameter */
+    background-color: $main-background;
+    width: 100%;
+    h3 {
+        padding-top: 15px;
+        @include roboto-font(24px, 700);
+    }
+    p {
+        
+        text-align: center;
+        @include roboto-font(18px, 300);
+
+    }
+    button[type="submit"] {
+
+        border: 0;
+        background: $purple-color-gradient;
+        color: white;
+        border-radius: 25px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.25));
+
+        padding: 15px 15px;
+        margin: 20px 20px;
+        margin-bottom: 50px;
+        cursor: pointer;
+        @include roboto-font(18px, bold);
+        transition: transform 0.4s, background-color 0.5s; 
+
+        &:hover {
+            transform: translateY(-10px);
+            background: $purple-hover;
+        }
+
+        
+      }
+}
