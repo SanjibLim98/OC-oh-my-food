@@ -14,7 +14,7 @@ box-sizing: border-box;
     padding-right: 0.5rem;
 }
 
-/* xs */
+/* xs  For Mobile Devices – 320px — 480px.*/
 @media (min-width: 475px) {
     .main-container {
         max-width: 475px; /*makes the container shirnk when the viewport touches */
@@ -35,18 +35,99 @@ box-sizing: border-box;
     }
 }
 
-/* lg */
+/*------ lg Laptops and small screen – 769px — 1024px.-----*/
+
 @media (min-width: 1024px) {
-    .main-container {
-        max-width: 1024x;
+   
+.main-container {
+     max-width: 1024px;
+
+.bookMeal-container {
+    
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        width: 100%;
     }
 }
 
-/* xl */
+.howItWorks {
+   
+    h3 {
+        font-size: 1.6rem;
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        .hiwCard {
+            width: 30%;
+            
+        }
+    }
+   
+}
+
+.restaurants {
+ 
+    h3 {
+        font-size: 1.6rem;
+        padding-left: 30px;
+    }
+
+    .restaurant-options {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        justify-content: space-between;
+        padding-left: 45px;
+
+        article {
+            width: 90%;
+        }
+    }
+}
+
+footer {
+
+    .footer-column {
+        display: flex;
+        flex-direction: row-reverse;
+        h4 {
+            padding: 20px;
+            margin-top: 5px;
+            margin-left: 50px;
+            margin-right: 30px;
+
+        }
+
+        ul {
+           display: flex;
+           flex-direction: row;
+           gap: 60px;
+       
+        }
+    }
+}
+
+    }
+
+}
+
+/* xl Large screens and Desktops – 1025px — 1200px.*/
 @media (min-width: 1280px) {
     .main-container {
         max-width: 1280px;
+       
     }
+
+    body {
+        font-size: 1.8rem;
+    }
+    
+  
 }
 
 /* 2xl */
@@ -55,4 +136,5 @@ box-sizing: border-box;
         max-width: 1536px;
     }
 }
+
 

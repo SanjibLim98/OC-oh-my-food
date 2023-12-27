@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::before, *::after {
   box-sizing: inherit;
 } /*Universal box sizing with inheritance */
@@ -13,7 +14,7 @@ html {
   padding-right: 0.5rem;
 }
 
-/* xs */
+/* xs  For Mobile Devices – 320px — 480px.*/
 @media (min-width: 475px) {
   .main-container {
     max-width: 475px; /*makes the container shirnk when the viewport touches */
@@ -31,16 +32,65 @@ html {
     max-width: 768px;
   }
 }
-/* lg */
+/*------ lg Laptops and small screen – 769px — 1024px.-----*/
 @media (min-width: 1024px) {
   .main-container {
-    max-width: 1024x;
+    max-width: 1024px;
+  }
+  .main-container .bookMeal-container h3 {
+    font-size: 2rem;
+  }
+  .main-container .bookMeal-container p {
+    width: 100%;
+  }
+  .main-container .howItWorks h3 {
+    font-size: 1.6rem;
+  }
+  .main-container .howItWorks section {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .main-container .howItWorks section .hiwCard {
+    width: 30%;
+  }
+  .main-container .restaurants h3 {
+    font-size: 1.6rem;
+    padding-left: 30px;
+  }
+  .main-container .restaurants .restaurant-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+    padding-left: 45px;
+  }
+  .main-container .restaurants .restaurant-options article {
+    width: 90%;
+  }
+  .main-container footer .footer-column {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-container footer .footer-column h4 {
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  .main-container footer .footer-column ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
   }
 }
-/* xl */
+/* xl Large screens and Desktops – 1025px — 1200px.*/
 @media (min-width: 1280px) {
   .main-container {
     max-width: 1280px;
+  }
+  body {
+    font-size: 1.8rem;
   }
 }
 /* 2xl */
@@ -49,6 +99,8 @@ html {
     max-width: 1536px;
   }
 }
+/*footer*/
+/*footer*/
 *, *::before, *::after {
   box-sizing: inherit;
 } /*Universal box sizing with inheritance */
@@ -64,7 +116,7 @@ html {
   padding-right: 0.5rem;
 }
 
-/* xs */
+/* xs  For Mobile Devices – 320px — 480px.*/
 @media (min-width: 475px) {
   .main-container {
     max-width: 475px; /*makes the container shirnk when the viewport touches */
@@ -82,16 +134,65 @@ html {
     max-width: 768px;
   }
 }
-/* lg */
+/*------ lg Laptops and small screen – 769px — 1024px.-----*/
 @media (min-width: 1024px) {
   .main-container {
-    max-width: 1024x;
+    max-width: 1024px;
+  }
+  .main-container .bookMeal-container h3 {
+    font-size: 2rem;
+  }
+  .main-container .bookMeal-container p {
+    width: 100%;
+  }
+  .main-container .howItWorks h3 {
+    font-size: 1.6rem;
+  }
+  .main-container .howItWorks section {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .main-container .howItWorks section .hiwCard {
+    width: 30%;
+  }
+  .main-container .restaurants h3 {
+    font-size: 1.6rem;
+    padding-left: 30px;
+  }
+  .main-container .restaurants .restaurant-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+    padding-left: 45px;
+  }
+  .main-container .restaurants .restaurant-options article {
+    width: 90%;
+  }
+  .main-container footer .footer-column {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-container footer .footer-column h4 {
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  .main-container footer .footer-column ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
   }
 }
-/* xl */
+/* xl Large screens and Desktops – 1025px — 1200px.*/
 @media (min-width: 1280px) {
   .main-container {
     max-width: 1280px;
+  }
+  body {
+    font-size: 1.8rem;
   }
 }
 /* 2xl */
@@ -132,6 +233,7 @@ html {
   font-weight: 500;
 }
 
+/*footer*/
 *, *::before, *::after {
   box-sizing: inherit;
 } /*Universal box sizing with inheritance */
@@ -147,7 +249,7 @@ html {
   padding-right: 0.5rem;
 }
 
-/* xs */
+/* xs  For Mobile Devices – 320px — 480px.*/
 @media (min-width: 475px) {
   .main-container {
     max-width: 475px; /*makes the container shirnk when the viewport touches */
@@ -165,16 +267,65 @@ html {
     max-width: 768px;
   }
 }
-/* lg */
+/*------ lg Laptops and small screen – 769px — 1024px.-----*/
 @media (min-width: 1024px) {
   .main-container {
-    max-width: 1024x;
+    max-width: 1024px;
+  }
+  .main-container .bookMeal-container h3 {
+    font-size: 2rem;
+  }
+  .main-container .bookMeal-container p {
+    width: 100%;
+  }
+  .main-container .howItWorks h3 {
+    font-size: 1.6rem;
+  }
+  .main-container .howItWorks section {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .main-container .howItWorks section .hiwCard {
+    width: 30%;
+  }
+  .main-container .restaurants h3 {
+    font-size: 1.6rem;
+    padding-left: 30px;
+  }
+  .main-container .restaurants .restaurant-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+    padding-left: 45px;
+  }
+  .main-container .restaurants .restaurant-options article {
+    width: 90%;
+  }
+  .main-container footer .footer-column {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-container footer .footer-column h4 {
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  .main-container footer .footer-column ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
   }
 }
-/* xl */
+/* xl Large screens and Desktops – 1025px — 1200px.*/
 @media (min-width: 1280px) {
   .main-container {
     max-width: 1280px;
+  }
+  body {
+    font-size: 1.8rem;
   }
 }
 /* 2xl */
@@ -200,6 +351,7 @@ html {
   font-weight: 700;
 }
 .bookMeal-container p {
+  width: 90%;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -211,7 +363,7 @@ html {
   color: white;
   border-radius: 25px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.25));
-  padding: 15px 15px;
+  padding: 15px 30px;
   margin: 20px 20px;
   margin-bottom: 50px;
   cursor: pointer;
@@ -225,6 +377,7 @@ html {
   background: linear-gradient(to bottom, rgba(250, 137, 250, 0.854), rgba(183, 56, 233, 0.8235294118));
 }
 
+/*footer*/
 *, *::before, *::after {
   box-sizing: inherit;
 } /*Universal box sizing with inheritance */
@@ -240,7 +393,7 @@ html {
   padding-right: 0.5rem;
 }
 
-/* xs */
+/* xs  For Mobile Devices – 320px — 480px.*/
 @media (min-width: 475px) {
   .main-container {
     max-width: 475px; /*makes the container shirnk when the viewport touches */
@@ -258,16 +411,65 @@ html {
     max-width: 768px;
   }
 }
-/* lg */
+/*------ lg Laptops and small screen – 769px — 1024px.-----*/
 @media (min-width: 1024px) {
   .main-container {
-    max-width: 1024x;
+    max-width: 1024px;
+  }
+  .main-container .bookMeal-container h3 {
+    font-size: 2rem;
+  }
+  .main-container .bookMeal-container p {
+    width: 100%;
+  }
+  .main-container .howItWorks h3 {
+    font-size: 1.6rem;
+  }
+  .main-container .howItWorks section {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .main-container .howItWorks section .hiwCard {
+    width: 30%;
+  }
+  .main-container .restaurants h3 {
+    font-size: 1.6rem;
+    padding-left: 30px;
+  }
+  .main-container .restaurants .restaurant-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+    padding-left: 45px;
+  }
+  .main-container .restaurants .restaurant-options article {
+    width: 90%;
+  }
+  .main-container footer .footer-column {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-container footer .footer-column h4 {
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  .main-container footer .footer-column ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
   }
 }
-/* xl */
+/* xl Large screens and Desktops – 1025px — 1200px.*/
 @media (min-width: 1280px) {
   .main-container {
     max-width: 1280px;
+  }
+  body {
+    font-size: 1.8rem;
   }
 }
 /* 2xl */
@@ -362,6 +564,7 @@ html {
   color: #9356DC;
 }
 
+/*footer*/
 .restaurants {
   width: 100%;
   padding-top: 10px;
@@ -460,6 +663,8 @@ html {
   margin: 25px;
   margin-right: 30px;
   font-size: 20px;
+  transition: color 0.2s;
+  cursor: pointer;
 }
 
 footer {
