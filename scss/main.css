@@ -14,6 +14,13 @@ html {
   padding-right: 0.5rem;
 }
 
+.menu-list .title-container {
+  width: 100%;
+}
+.menu-list .title-container .menu-title {
+  font-size: 2rem;
+}
+
 /* xs  For Mobile Devices – 320px — 480px.*/
 @media (min-width: 475px) {
   .main-container {
@@ -45,6 +52,8 @@ html {
   }
   .main-container .howItWorks h3 {
     font-size: 1.6rem;
+    padding-left: 140px;
+    margin-bottom: 30px;
   }
   .main-container .howItWorks section {
     display: flex;
@@ -52,7 +61,10 @@ html {
     gap: 30px;
   }
   .main-container .howItWorks section .hiwCard {
-    width: 30%;
+    width: 24%;
+  }
+  .main-container .restaurants {
+    padding-bottom: 50px;
   }
   .main-container .restaurants h3 {
     font-size: 1.6rem;
@@ -66,14 +78,13 @@ html {
     padding-left: 45px;
   }
   .main-container .restaurants .restaurant-options article {
-    width: 90%;
+    width: 80%;
   }
   .main-container footer .footer-column {
     display: flex;
     flex-direction: row-reverse;
   }
   .main-container footer .footer-column h4 {
-    padding: 20px;
     margin-top: 5px;
     margin-left: 50px;
     margin-right: 30px;
@@ -82,19 +93,212 @@ html {
     display: flex;
     flex-direction: row;
     gap: 60px;
+    padding-top: 10px;
   }
+  .main-container .header_container {
+    height: 500px;
+    min-width: 100%;
+  }
+  .main-container .header_container .kit-image {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container .header_container .kit-image img {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-container .header_container .header_card .arrow-container {
+    list-style: none;
+    text-decoration: none;
+    background-color: red;
+  }
+  .main-container .header_container .header_card .arrow-container a {
+    list-style: none;
+    text-decoration: none;
+  }
+  .main-container .header_container .header_card .arrow-container a .fa-arrow-left {
+    margin-left: 30px;
+    margin-top: 5px;
+    display: flex;
+    color: black;
+    padding: 0;
+    font-size: 25px;
+    background-color: green;
+  }
+  .main-container .header_container .header_card .logo-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container .logo {
+    margin-top: 3px;
+    width: 180px;
+    height: auto;
+  }
+  .main-container .menu-list {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+  }
+  .main-container .menu-list .title-container {
+    width: 100%;
+  }
+  .main-container .menu-list .title-container .menu-title {
+    font-size: 2rem;
+  }
+  .main-container .menu-list .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-container .menu-list .card-content .title-container {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container .menu-list .card-content .title-container .menu-title {
+    padding-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container .menu-list .card-content .title-container .menu-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .card-content .heart-icon {
+    margin: 30px;
+    margin-right: 60px;
+    font-size: 25px;
+  }
+  .main-container .menu-list .menu-items {
+    width: 100%;
+    background-color: pink;
+    padding-bottom: 50px;
+  }
+  .main-container .menu-list .menu-items .item {
+    width: 100%;
+    margin: 0;
+  }
+  .main-container .menu-list .menu-items .item .title-container .menu-subtitle {
+    margin-left: 50px;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-title {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .price p {
+    font-size: 1.1rem;
+  }
+  /* xl Large screens and Desktops – 1025px — 1200px.*/
+  /* 2xl */
 }
-/* xl Large screens and Desktops – 1025px — 1200px.*/
-@media (min-width: 1280px) {
+@media (min-width: 1024px) and (min-width: 1280px) {
   .main-container {
     max-width: 1280px;
   }
-  body {
-    font-size: 1.8rem;
+  .main-container .restaurants h3 {
+    font-size: 1.6rem;
+    padding-left: 170px;
+  }
+  .main-container .restaurants .restaurant-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+  }
+  .main-container .restaurants .restaurant-options article {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container footer .footer-column {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-container footer .footer-column h4 {
+    padding-top: 18px;
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  .main-container footer .footer-column ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container .logo {
+    margin-top: 3px;
+    width: 180px;
+    height: auto;
+  }
+  .main-container .menu-list {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container .menu-list .title-container {
+    width: 100%;
+  }
+  .main-container .menu-list .title-container .menu-title {
+    font-size: 2rem;
+  }
+  .main-container .menu-list .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-container .menu-list .card-content .title-container {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+  }
+  .main-container .menu-list .card-content .title-container .menu-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .card-content .heart-icon {
+    margin: 30px;
+    margin-right: 60px;
+    font-size: 25px;
+  }
+  .main-container .menu-list .menu-items {
+    width: 100%;
+  }
+  .main-container .menu-list .menu-items .item {
+    width: 100%;
+    margin: 0;
+  }
+  .main-container .menu-list .menu-items .item .title-container .menu-subtitle {
+    margin-left: 50px;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-title {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .price p {
+    font-size: 1.1rem;
   }
 }
-/* 2xl */
-@media (min-width: 1536px) {
+@media (min-width: 1024px) and (min-width: 1536px) {
   .main-container {
     max-width: 1536px;
   }
@@ -116,6 +320,13 @@ html {
   padding-right: 0.5rem;
 }
 
+.menu-list .title-container {
+  width: 100%;
+}
+.menu-list .title-container .menu-title {
+  font-size: 2rem;
+}
+
 /* xs  For Mobile Devices – 320px — 480px.*/
 @media (min-width: 475px) {
   .main-container {
@@ -147,6 +358,8 @@ html {
   }
   .main-container .howItWorks h3 {
     font-size: 1.6rem;
+    padding-left: 140px;
+    margin-bottom: 30px;
   }
   .main-container .howItWorks section {
     display: flex;
@@ -154,7 +367,10 @@ html {
     gap: 30px;
   }
   .main-container .howItWorks section .hiwCard {
-    width: 30%;
+    width: 24%;
+  }
+  .main-container .restaurants {
+    padding-bottom: 50px;
   }
   .main-container .restaurants h3 {
     font-size: 1.6rem;
@@ -168,14 +384,13 @@ html {
     padding-left: 45px;
   }
   .main-container .restaurants .restaurant-options article {
-    width: 90%;
+    width: 80%;
   }
   .main-container footer .footer-column {
     display: flex;
     flex-direction: row-reverse;
   }
   .main-container footer .footer-column h4 {
-    padding: 20px;
     margin-top: 5px;
     margin-left: 50px;
     margin-right: 30px;
@@ -184,19 +399,212 @@ html {
     display: flex;
     flex-direction: row;
     gap: 60px;
+    padding-top: 10px;
   }
+  .main-container .header_container {
+    height: 500px;
+    min-width: 100%;
+  }
+  .main-container .header_container .kit-image {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container .header_container .kit-image img {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-container .header_container .header_card .arrow-container {
+    list-style: none;
+    text-decoration: none;
+    background-color: red;
+  }
+  .main-container .header_container .header_card .arrow-container a {
+    list-style: none;
+    text-decoration: none;
+  }
+  .main-container .header_container .header_card .arrow-container a .fa-arrow-left {
+    margin-left: 30px;
+    margin-top: 5px;
+    display: flex;
+    color: black;
+    padding: 0;
+    font-size: 25px;
+    background-color: green;
+  }
+  .main-container .header_container .header_card .logo-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container .logo {
+    margin-top: 3px;
+    width: 180px;
+    height: auto;
+  }
+  .main-container .menu-list {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+  }
+  .main-container .menu-list .title-container {
+    width: 100%;
+  }
+  .main-container .menu-list .title-container .menu-title {
+    font-size: 2rem;
+  }
+  .main-container .menu-list .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-container .menu-list .card-content .title-container {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container .menu-list .card-content .title-container .menu-title {
+    padding-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container .menu-list .card-content .title-container .menu-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .card-content .heart-icon {
+    margin: 30px;
+    margin-right: 60px;
+    font-size: 25px;
+  }
+  .main-container .menu-list .menu-items {
+    width: 100%;
+    background-color: pink;
+    padding-bottom: 50px;
+  }
+  .main-container .menu-list .menu-items .item {
+    width: 100%;
+    margin: 0;
+  }
+  .main-container .menu-list .menu-items .item .title-container .menu-subtitle {
+    margin-left: 50px;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-title {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .price p {
+    font-size: 1.1rem;
+  }
+  /* xl Large screens and Desktops – 1025px — 1200px.*/
+  /* 2xl */
 }
-/* xl Large screens and Desktops – 1025px — 1200px.*/
-@media (min-width: 1280px) {
+@media (min-width: 1024px) and (min-width: 1280px) {
   .main-container {
     max-width: 1280px;
   }
-  body {
-    font-size: 1.8rem;
+  .main-container .restaurants h3 {
+    font-size: 1.6rem;
+    padding-left: 170px;
+  }
+  .main-container .restaurants .restaurant-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+  }
+  .main-container .restaurants .restaurant-options article {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container footer .footer-column {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-container footer .footer-column h4 {
+    padding-top: 18px;
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  .main-container footer .footer-column ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container .logo {
+    margin-top: 3px;
+    width: 180px;
+    height: auto;
+  }
+  .main-container .menu-list {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container .menu-list .title-container {
+    width: 100%;
+  }
+  .main-container .menu-list .title-container .menu-title {
+    font-size: 2rem;
+  }
+  .main-container .menu-list .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-container .menu-list .card-content .title-container {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+  }
+  .main-container .menu-list .card-content .title-container .menu-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .card-content .heart-icon {
+    margin: 30px;
+    margin-right: 60px;
+    font-size: 25px;
+  }
+  .main-container .menu-list .menu-items {
+    width: 100%;
+  }
+  .main-container .menu-list .menu-items .item {
+    width: 100%;
+    margin: 0;
+  }
+  .main-container .menu-list .menu-items .item .title-container .menu-subtitle {
+    margin-left: 50px;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-title {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .price p {
+    font-size: 1.1rem;
   }
 }
-/* 2xl */
-@media (min-width: 1536px) {
+@media (min-width: 1024px) and (min-width: 1536px) {
   .main-container {
     max-width: 1536px;
   }
@@ -249,6 +657,13 @@ html {
   padding-right: 0.5rem;
 }
 
+.menu-list .title-container {
+  width: 100%;
+}
+.menu-list .title-container .menu-title {
+  font-size: 2rem;
+}
+
 /* xs  For Mobile Devices – 320px — 480px.*/
 @media (min-width: 475px) {
   .main-container {
@@ -280,6 +695,8 @@ html {
   }
   .main-container .howItWorks h3 {
     font-size: 1.6rem;
+    padding-left: 140px;
+    margin-bottom: 30px;
   }
   .main-container .howItWorks section {
     display: flex;
@@ -287,7 +704,10 @@ html {
     gap: 30px;
   }
   .main-container .howItWorks section .hiwCard {
-    width: 30%;
+    width: 24%;
+  }
+  .main-container .restaurants {
+    padding-bottom: 50px;
   }
   .main-container .restaurants h3 {
     font-size: 1.6rem;
@@ -301,14 +721,13 @@ html {
     padding-left: 45px;
   }
   .main-container .restaurants .restaurant-options article {
-    width: 90%;
+    width: 80%;
   }
   .main-container footer .footer-column {
     display: flex;
     flex-direction: row-reverse;
   }
   .main-container footer .footer-column h4 {
-    padding: 20px;
     margin-top: 5px;
     margin-left: 50px;
     margin-right: 30px;
@@ -317,19 +736,212 @@ html {
     display: flex;
     flex-direction: row;
     gap: 60px;
+    padding-top: 10px;
   }
+  .main-container .header_container {
+    height: 500px;
+    min-width: 100%;
+  }
+  .main-container .header_container .kit-image {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container .header_container .kit-image img {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-container .header_container .header_card .arrow-container {
+    list-style: none;
+    text-decoration: none;
+    background-color: red;
+  }
+  .main-container .header_container .header_card .arrow-container a {
+    list-style: none;
+    text-decoration: none;
+  }
+  .main-container .header_container .header_card .arrow-container a .fa-arrow-left {
+    margin-left: 30px;
+    margin-top: 5px;
+    display: flex;
+    color: black;
+    padding: 0;
+    font-size: 25px;
+    background-color: green;
+  }
+  .main-container .header_container .header_card .logo-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container .logo {
+    margin-top: 3px;
+    width: 180px;
+    height: auto;
+  }
+  .main-container .menu-list {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+  }
+  .main-container .menu-list .title-container {
+    width: 100%;
+  }
+  .main-container .menu-list .title-container .menu-title {
+    font-size: 2rem;
+  }
+  .main-container .menu-list .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-container .menu-list .card-content .title-container {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container .menu-list .card-content .title-container .menu-title {
+    padding-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container .menu-list .card-content .title-container .menu-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .card-content .heart-icon {
+    margin: 30px;
+    margin-right: 60px;
+    font-size: 25px;
+  }
+  .main-container .menu-list .menu-items {
+    width: 100%;
+    background-color: pink;
+    padding-bottom: 50px;
+  }
+  .main-container .menu-list .menu-items .item {
+    width: 100%;
+    margin: 0;
+  }
+  .main-container .menu-list .menu-items .item .title-container .menu-subtitle {
+    margin-left: 50px;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-title {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .price p {
+    font-size: 1.1rem;
+  }
+  /* xl Large screens and Desktops – 1025px — 1200px.*/
+  /* 2xl */
 }
-/* xl Large screens and Desktops – 1025px — 1200px.*/
-@media (min-width: 1280px) {
+@media (min-width: 1024px) and (min-width: 1280px) {
   .main-container {
     max-width: 1280px;
   }
-  body {
-    font-size: 1.8rem;
+  .main-container .restaurants h3 {
+    font-size: 1.6rem;
+    padding-left: 170px;
+  }
+  .main-container .restaurants .restaurant-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+  }
+  .main-container .restaurants .restaurant-options article {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container footer .footer-column {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-container footer .footer-column h4 {
+    padding-top: 18px;
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  .main-container footer .footer-column ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container .logo {
+    margin-top: 3px;
+    width: 180px;
+    height: auto;
+  }
+  .main-container .menu-list {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container .menu-list .title-container {
+    width: 100%;
+  }
+  .main-container .menu-list .title-container .menu-title {
+    font-size: 2rem;
+  }
+  .main-container .menu-list .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-container .menu-list .card-content .title-container {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+  }
+  .main-container .menu-list .card-content .title-container .menu-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .card-content .heart-icon {
+    margin: 30px;
+    margin-right: 60px;
+    font-size: 25px;
+  }
+  .main-container .menu-list .menu-items {
+    width: 100%;
+  }
+  .main-container .menu-list .menu-items .item {
+    width: 100%;
+    margin: 0;
+  }
+  .main-container .menu-list .menu-items .item .title-container .menu-subtitle {
+    margin-left: 50px;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-title {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .price p {
+    font-size: 1.1rem;
   }
 }
-/* 2xl */
-@media (min-width: 1536px) {
+@media (min-width: 1024px) and (min-width: 1536px) {
   .main-container {
     max-width: 1536px;
   }
@@ -341,7 +953,7 @@ html {
   align-items: center;
   flex-direction: column;
   /*calling mixin with desired format in the parameter */
-  background-color: #f7f7f7;
+  background-color: #F6F6F6;
   width: 100%;
 }
 .bookMeal-container h3 {
@@ -393,6 +1005,13 @@ html {
   padding-right: 0.5rem;
 }
 
+.menu-list .title-container {
+  width: 100%;
+}
+.menu-list .title-container .menu-title {
+  font-size: 2rem;
+}
+
 /* xs  For Mobile Devices – 320px — 480px.*/
 @media (min-width: 475px) {
   .main-container {
@@ -424,6 +1043,8 @@ html {
   }
   .main-container .howItWorks h3 {
     font-size: 1.6rem;
+    padding-left: 140px;
+    margin-bottom: 30px;
   }
   .main-container .howItWorks section {
     display: flex;
@@ -431,7 +1052,10 @@ html {
     gap: 30px;
   }
   .main-container .howItWorks section .hiwCard {
-    width: 30%;
+    width: 24%;
+  }
+  .main-container .restaurants {
+    padding-bottom: 50px;
   }
   .main-container .restaurants h3 {
     font-size: 1.6rem;
@@ -445,14 +1069,13 @@ html {
     padding-left: 45px;
   }
   .main-container .restaurants .restaurant-options article {
-    width: 90%;
+    width: 80%;
   }
   .main-container footer .footer-column {
     display: flex;
     flex-direction: row-reverse;
   }
   .main-container footer .footer-column h4 {
-    padding: 20px;
     margin-top: 5px;
     margin-left: 50px;
     margin-right: 30px;
@@ -461,19 +1084,212 @@ html {
     display: flex;
     flex-direction: row;
     gap: 60px;
+    padding-top: 10px;
   }
+  .main-container .header_container {
+    height: 500px;
+    min-width: 100%;
+  }
+  .main-container .header_container .kit-image {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container .header_container .kit-image img {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-container .header_container .header_card .arrow-container {
+    list-style: none;
+    text-decoration: none;
+    background-color: red;
+  }
+  .main-container .header_container .header_card .arrow-container a {
+    list-style: none;
+    text-decoration: none;
+  }
+  .main-container .header_container .header_card .arrow-container a .fa-arrow-left {
+    margin-left: 30px;
+    margin-top: 5px;
+    display: flex;
+    color: black;
+    padding: 0;
+    font-size: 25px;
+    background-color: green;
+  }
+  .main-container .header_container .header_card .logo-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container .logo {
+    margin-top: 3px;
+    width: 180px;
+    height: auto;
+  }
+  .main-container .menu-list {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+  }
+  .main-container .menu-list .title-container {
+    width: 100%;
+  }
+  .main-container .menu-list .title-container .menu-title {
+    font-size: 2rem;
+  }
+  .main-container .menu-list .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-container .menu-list .card-content .title-container {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container .menu-list .card-content .title-container .menu-title {
+    padding-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container .menu-list .card-content .title-container .menu-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .card-content .heart-icon {
+    margin: 30px;
+    margin-right: 60px;
+    font-size: 25px;
+  }
+  .main-container .menu-list .menu-items {
+    width: 100%;
+    background-color: pink;
+    padding-bottom: 50px;
+  }
+  .main-container .menu-list .menu-items .item {
+    width: 100%;
+    margin: 0;
+  }
+  .main-container .menu-list .menu-items .item .title-container .menu-subtitle {
+    margin-left: 50px;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-title {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .price p {
+    font-size: 1.1rem;
+  }
+  /* xl Large screens and Desktops – 1025px — 1200px.*/
+  /* 2xl */
 }
-/* xl Large screens and Desktops – 1025px — 1200px.*/
-@media (min-width: 1280px) {
+@media (min-width: 1024px) and (min-width: 1280px) {
   .main-container {
     max-width: 1280px;
   }
-  body {
-    font-size: 1.8rem;
+  .main-container .restaurants h3 {
+    font-size: 1.6rem;
+    padding-left: 170px;
+  }
+  .main-container .restaurants .restaurant-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+  }
+  .main-container .restaurants .restaurant-options article {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container footer .footer-column {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-container footer .footer-column h4 {
+    padding-top: 18px;
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  .main-container footer .footer-column ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container .header_container .header_card .logo-container .logo {
+    margin-top: 3px;
+    width: 180px;
+    height: auto;
+  }
+  .main-container .menu-list {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container .menu-list .title-container {
+    width: 100%;
+  }
+  .main-container .menu-list .title-container .menu-title {
+    font-size: 2rem;
+  }
+  .main-container .menu-list .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-container .menu-list .card-content .title-container {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+  }
+  .main-container .menu-list .card-content .title-container .menu-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .card-content .heart-icon {
+    margin: 30px;
+    margin-right: 60px;
+    font-size: 25px;
+  }
+  .main-container .menu-list .menu-items {
+    width: 100%;
+  }
+  .main-container .menu-list .menu-items .item {
+    width: 100%;
+    margin: 0;
+  }
+  .main-container .menu-list .menu-items .item .title-container .menu-subtitle {
+    margin-left: 50px;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-title {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .card-txt .card-subtitle {
+    font-size: 1.1rem;
+  }
+  .main-container .menu-list .menu-items .item article .card-content .price p {
+    font-size: 1.1rem;
   }
 }
-/* 2xl */
-@media (min-width: 1536px) {
+@media (min-width: 1024px) and (min-width: 1536px) {
   .main-container {
     max-width: 1536px;
   }
@@ -569,7 +1385,7 @@ html {
   width: 100%;
   padding-top: 10px;
   height: auto;
-  background-color: rgb(243, 243, 243);
+  background-color: #F6F6F6;
 }
 .restaurants h3 {
   padding: 10px 0;
@@ -672,6 +1488,8 @@ footer {
   padding: 5px;
   display: flex;
   justify-content: flex-start;
+  position: relative;
+  bottom: 50px;
 }
 footer .footer-column {
   display: flex;

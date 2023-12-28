@@ -4,10 +4,10 @@
     padding-bottom: 20px;
     width: 100%; 
     display: flex;
-    justify-content: space-between;
     
     padding-top: 15px;
     padding-bottom: 20px;
+    background-color: blue;
 
 
     .arrow-container {
@@ -15,23 +15,33 @@
         text-decoration: none;
         background-color: red;
         
-        a {
-            list-style: none;
-            text-decoration: none;
-            
-           
-            .fa-arrow-left {
-                margin-left: 30px;
+        button {
+            background-color: pink;
+
+            i {
+               
                 margin-top: 5px;
                 display: flex;
                 color: black;
                 padding: 0;
                 font-size: 25px;
                 background-color: green;
+                cursor: pointer;
+
                 
             }
-            
+            a {
+                list-style: none;
+                text-decoration: none;
+            }
+             
+            a:hover {
+                cursor: pointer;
+            }
         }
+        
+
+       
 
         
     }

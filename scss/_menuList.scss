@@ -1,9 +1,11 @@
 .menu-list {
     @include flexCenter(column); /*calling mixin with desired format in the parameter */
-    background-color: $menu-card;
+    background-color: $main-background;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     position: relative;
+    padding-bottom: 50px;
+    background-color: $main-background;
     bottom: 50px;
     
     h3 {
@@ -32,13 +34,13 @@
             margin-top: 20px;
             display: flex;
             
-            @include logo-font(25px, 500);
+            @include logo-font(20px, 500);
         }
 
     
         
         .menu-subtitle {
-           
+            margin-bottom: 10px;
             @include borderUnder;
             @include roboto-font(16px, 500);
         }
@@ -65,6 +67,7 @@
                 padding: 0;
                 margin: 0;
             }
+
             .menu-subtitle {
                 margin: 0;
                 
@@ -73,7 +76,7 @@
         .heart-icon {
             margin: 30px;
             margin-right: 60px;
-            font-size: 25px;
+            font-size: 20px;
         }
 
         }
@@ -101,6 +104,7 @@
                 height: auto;
                 width: 90%; 
                 margin-top: 20px;
+                margin-bottom: 10px;
                 transition: transform 0.4s, background-color 0.3s; 
                 
                .card-content {
