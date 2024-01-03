@@ -212,7 +212,7 @@ html {
   .main-container .restaurants .restaurant-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .main-container .restaurants .restaurant-options article {
     width: 65%;
@@ -518,7 +518,7 @@ html {
   .main-container .restaurants .restaurant-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .main-container .restaurants .restaurant-options article {
     width: 65%;
@@ -855,7 +855,7 @@ html {
   .main-container .restaurants .restaurant-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .main-container .restaurants .restaurant-options article {
     width: 65%;
@@ -1203,7 +1203,7 @@ html {
   .main-container .restaurants .restaurant-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .main-container .restaurants .restaurant-options article {
     width: 65%;

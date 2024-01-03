@@ -212,7 +212,7 @@ html {
   .main-container .restaurants .restaurant-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .main-container .restaurants .restaurant-options article {
     width: 65%;
@@ -310,43 +310,28 @@ html {
   padding-bottom: 20px;
   width: 100%;
   display: flex;
+  justify-content: center;
   padding-top: 15px;
-  padding-bottom: 20px;
-  background-color: blue;
+  padding-bottom: 15px;
 }
-.header_card .arrow-container {
-  list-style: none;
-  text-decoration: none;
-  background-color: red;
-}
-.header_card .arrow-container button {
-  background-color: pink;
-}
-.header_card .arrow-container button i {
-  margin-top: 5px;
-  display: flex;
-  color: black;
-  padding: 0;
-  font-size: 25px;
-  background-color: green;
-  cursor: pointer;
-}
-.header_card .arrow-container button a {
-  list-style: none;
-  text-decoration: none;
-}
-.header_card .arrow-container button a:hover {
-  cursor: pointer;
-}
-.header_card .logo-container {
-  position: absolute;
+.header_card .logo_c {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
-.header_card .logo-container .logo {
+.header_card .logo {
   width: 180px;
   height: auto;
+}
+.header_card .button {
+  position: absolute;
+  left: 30px;
+  margin-top: 8px;
+  font-size: 20px;
+  color: black;
+}
+.header_card .button:active {
+  color: linear-gradient(to bottom, rgba(250, 137, 250, 0.854), rgba(183, 56, 233, 0.8235294118));
 }
 
 .kit-image {

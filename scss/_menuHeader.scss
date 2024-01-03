@@ -4,64 +4,33 @@
     padding-bottom: 20px;
     width: 100%; 
     display: flex;
-    
+    justify-content: center;
     padding-top: 15px;
-    padding-bottom: 20px;
-    background-color: blue;
-
-
-    .arrow-container {
-        list-style: none;
-        text-decoration: none;
-        background-color: red;
-        
-        button {
-            background-color: pink;
-
-            i {
-               
-                margin-top: 5px;
-                display: flex;
-                color: black;
-                padding: 0;
-                font-size: 25px;
-                background-color: green;
-                cursor: pointer;
-
-                
-            }
-            a {
-                list-style: none;
-                text-decoration: none;
-            }
-             
-            a:hover {
-                cursor: pointer;
-            }
-        }
-        
-
-       
-
-        
-    }
-
-
-    .logo-container {
-        position: absolute;
+    padding-bottom: 15px;
+   
+    .logo_c {
         width: 100%;
+
         display: flex;
-        justify-content: center;
-        
-
-  
-        .logo {
-
-            width: 180px;
-            height: auto;
-
-        }  
+        justify-content: space-around;
     }
+    .logo {
+        
+        width: 180px;
+        height: auto;
+
+    }
+    .button {
+        position: absolute;
+        left: 30px;
+        margin-top: 8px;
+        font-size: 20px;
+        color: black;
+
+    }
+
+    
+
 
 }
 
