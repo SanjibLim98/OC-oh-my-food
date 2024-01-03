@@ -94,7 +94,7 @@ box-sizing: border-box;
     padding-bottom: 50px;
     h3 {
         font-size: 1.6rem;
-        padding-left: 30px;
+        padding-left: 25px;
     }
 
     .restaurant-options {
@@ -102,7 +102,8 @@ box-sizing: border-box;
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
         justify-content: space-between;
-        padding-left: 45px;
+        margin-left: 30px;
+        
 
         article {
             width: 80%;
@@ -337,7 +338,11 @@ footer {
                 
         
                 article {
-                    width: 65%;
+                    width: 490px;
+                    max-width: 100%;
+
+                    height: 251px;
+                    max-height: 100%;
                     
                     margin-left: auto;
                     margin-right: auto;
