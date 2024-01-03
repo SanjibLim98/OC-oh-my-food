@@ -21,10 +21,29 @@ html {
   font-size: 2rem;
 }
 
+@media (min-width: 305px) {
+  .main-container {
+    max-width: 305px; /*makes the container shirnk when the viewport touches */
+  }
+  .main-container .restaurants {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 375px) {
+  .main-container {
+    max-width: 375px; /*makes the container shirnk when the viewport touches */
+  }
+  .main-container .restaurants {
+    padding-bottom: 50px;
+  }
+}
 /* xs  For Mobile Devices – 320px — 480px.*/
 @media (min-width: 475px) {
   .main-container {
     max-width: 475px; /*makes the container shirnk when the viewport touches */
+  }
+  .main-container .restaurants {
+    padding-bottom: 50px;
   }
 }
 /* sm */
@@ -165,7 +184,6 @@ html {
     align-items: center;
   }
   .main-container .menu-list .card-content .title-container .menu-title {
-    padding-left: 80px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -179,7 +197,6 @@ html {
   }
   .main-container .menu-list .menu-items {
     width: 100%;
-    background-color: pink;
     padding-bottom: 50px;
   }
   .main-container .menu-list .menu-items .item {

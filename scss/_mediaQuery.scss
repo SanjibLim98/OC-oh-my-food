@@ -27,14 +27,39 @@ box-sizing: border-box;
           
         }
     }
-}    
+}   
 
+@media (min-width: 305px) {
+    .main-container {
+        max-width: 305px; /*makes the container shirnk when the viewport touches */
+        .restaurants {
+ 
+            padding-bottom: 50px;
+           
+        }
+    }
+}
+
+@media (min-width: 375px) {
+    .main-container {
+        max-width: 375px; /*makes the container shirnk when the viewport touches */
+        .restaurants {
+ 
+            padding-bottom: 50px;
+           
+        }
+    }
+}
 
 /* xs  For Mobile Devices – 320px — 480px.*/
 @media (min-width: 475px) {
     .main-container {
         max-width: 475px; /*makes the container shirnk when the viewport touches */
-       
+        .restaurants {
+ 
+            padding-bottom: 50px;
+           
+        }
     }
 }
 
@@ -239,7 +264,7 @@ footer {
                     align-items: center;
                     
                     .menu-title {
-                        padding-left: 80px;
+                        
                         margin-left: auto;
                         margin-right: auto;
                     }
@@ -263,7 +288,7 @@ footer {
         
             .menu-items{
                 width: 100%;
-                background-color: pink;
+                
                 padding-bottom: 50px;
                 
                 .item {
