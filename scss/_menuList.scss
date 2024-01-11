@@ -75,10 +75,34 @@
                 
                 }
             }
-        .heart-icon {
+        .heart-icon { /*styling container for the heart icon*/
             margin: 30px;
             margin-right: 60px;
             font-size: 20px;
+            cursor: pointer;
+            position: relative;
+            
+            .fa-regular {
+                color: black;
+                transition: 200ms;
+                
+             
+            }
+            
+            .fa-solid {
+                position: absolute; /*Positions the element absolutely within its containing element (.heart-icon container) */
+                background: linear-gradient(#FF79DA, #9356DC);
+                background-clip: text; /*clip the background to the shape of the text (.fa-regular)*/
+                color: transparent; /*ensures that the text itself is not visible, allowing the gradient to be seen through the shape of the outlined heart*/
+                opacity: 0;
+                left: 0;
+                transition: 200ms;
+                &:hover,
+                &:active {
+                    opacity: 1;
+                }
+               
+            }
         }
 
         }

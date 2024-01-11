@@ -29,6 +29,16 @@
 
         @include roboto-font(15px, 500);
 
+        &:hover {
+            background-color: $restaurant-hover;
+            transition: transform 0.5s;
+            transform: translateY(-5px);
+            
+            .contain-card i {
+                color: $num-badge;
+            }
+        }
+
         .badge-number {
 
             position: absolute;
@@ -67,18 +77,18 @@
             .hiw-icon{
                 position: relative;
                 right: 10px;
-                transition: color 0.5s; 
+                transition: color 200ms; 
             }
 
             .hiw-icon2{
                 position: relative;
                 right: 25px;
-                transition: color 0.5s; 
+                transition: color 200ms; 
             }
 
             .hiw-icon3{
                 margin: 15px;
-                transition: color 0.5s; 
+                transition: color 200ms; 
             }
             
             i {
@@ -88,9 +98,6 @@
                 position: relative;
                 transition: color 0.25s; 
                 
-                &:hover {
-                    color: $num-badge;
-                }
             }
         }
         

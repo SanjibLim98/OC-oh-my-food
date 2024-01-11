@@ -1,4 +1,74 @@
 @charset "UTF-8";
+body {
+  position: relative; /*establishes it as the positioning context for the absolutely positioned child elements*/
+  height: 100vh; /* represents 105% of the viewport height */
+}
+
+.loader {
+  position: absolute; /*used to center the loader with top,left,transform:translate*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite, fadeOut 1s forwards; /*animation prop that spins the loader and fades out*/
+  opacity: 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.content { /*covers the whole webpage*/
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s 1s forwards, slideIn 1s 1s forwards;
+  /*(fadeIn) gradually increases opacity with a 1s delay*/
+  /*forward ensures that after animation finishes, it will keep the styles applied from the last keyframe*/
+  /*(slideIn) translates the content elements to slide along the Y-axis from 20px down to 0 pixels*/
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+h1, p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
 *, *::before, *::after {
   box-sizing: inherit;
 } /*Universal box sizing with inheritance */
@@ -436,10 +506,29 @@ html {
 .menu-list .card-content .title-container .menu-subtitle {
   margin: 0;
 }
-.menu-list .card-content .heart-icon {
+.menu-list .card-content .heart-icon { /*styling container for the heart icon*/
   margin: 30px;
   margin-right: 60px;
   font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.menu-list .card-content .heart-icon .fa-regular {
+  color: black;
+  transition: 200ms;
+}
+.menu-list .card-content .heart-icon .fa-solid {
+  position: absolute; /*Positions the element absolutely within its containing element (.heart-icon container) */
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text; /*clip the background to the shape of the text (.fa-regular)*/
+  color: transparent; /*ensures that the text itself is not visible, allowing the gradient to be seen through the shape of the outlined heart*/
+  opacity: 0;
+  left: 0;
+  transition: 200ms;
+}
+.menu-list .card-content .heart-icon .fa-solid:hover, .menu-list .card-content .heart-icon .fa-solid:active {
+  opacity: 1;
 }
 .menu-list .menu-items {
   width: 100%;
