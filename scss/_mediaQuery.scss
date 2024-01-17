@@ -1,8 +1,9 @@
 *, *::before, *::after {box-sizing: inherit;} /*Universal box sizing with inheritance */
 
 html {
-
-box-sizing: border-box;
+ 
+box-sizing: border-box; /* specified width and height include the padding and border, but not the margin. 
+                            This makes it easier to create predictable and consistent layouts. */
 
 }
 
@@ -14,20 +15,8 @@ box-sizing: border-box;
     padding-right: 0.5rem;
 }
 
-.menu-list {
-        
 
-    .title-container {
-    
-        width: 100%;
-
-        .menu-title {
-       
-          font-size: 2rem;
-          
-        }
-    }
-}   
+/* There are 8 break points */
 
 @media (min-width: 305px) {
     .main-container {
@@ -178,50 +167,7 @@ footer {
                 }
             }
             
-            .header_card {
- 
-            .arrow-container {
-                list-style: none;
-                text-decoration: none;
-             
-                
-                a {
-                    list-style: none;
-                    text-decoration: none;
-                    
-                   
-                    .fa-arrow-left {
-                        margin-left: 30px;
-                        margin-top: 5px;
-                        display: flex;
-                        color: black;
-                        padding: 0;
-                        font-size: 25px;
-                        background-color: green;
-                        
-                    }
-                    
-                }
-        
-                
-            }
-        
-        
-            .logo-container {
-                position: absolute;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                
-                .logo {
-                    margin-top: 3px;
-                    width: 180px;
-                    height: auto;
-        
-                }  
-            }
-        
-            }
+            
         }
 
 
@@ -273,11 +219,6 @@ footer {
                 }
         
                 }
-        
-        
-        
-            
-            
         
             .menu-items{
                 width: 100%;

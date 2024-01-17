@@ -3,7 +3,7 @@
  animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
 body {
   position: relative; /*establishes it as the positioning context for the absolutely positioned child elements*/
-  height: 100vh; /* represents 105% of the viewport height */
+  height: 100vh; /* represents 100% of the viewport height */
 }
 
 .loader {
@@ -102,7 +102,8 @@ p {
   box-sizing: inherit;
 } /*Universal box sizing with inheritance */
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; /* specified width and height include the padding and border, but not the margin. 
+    This makes it easier to create predictable and consistent layouts. */
 }
 
 .main-container {
@@ -113,13 +114,7 @@ html {
   padding-right: 0.5rem;
 }
 
-.menu-list .title-container {
-  width: 100%;
-}
-.menu-list .title-container .menu-title {
-  font-size: 2rem;
-}
-
+/* There are 8 break points */
 @media (min-width: 305px) {
   .main-container {
     max-width: 305px; /*makes the container shirnk when the viewport touches */
@@ -227,34 +222,6 @@ html {
     height: inherit;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .main-container .header_container .header_card .arrow-container {
-    list-style: none;
-    text-decoration: none;
-  }
-  .main-container .header_container .header_card .arrow-container a {
-    list-style: none;
-    text-decoration: none;
-  }
-  .main-container .header_container .header_card .arrow-container a .fa-arrow-left {
-    margin-left: 30px;
-    margin-top: 5px;
-    display: flex;
-    color: black;
-    padding: 0;
-    font-size: 25px;
-    background-color: green;
-  }
-  .main-container .header_container .header_card .logo-container {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .main-container .header_container .header_card .logo-container .logo {
-    margin-top: 3px;
-    width: 180px;
-    height: auto;
   }
   .main-container .menu-list {
     width: 90%;
@@ -516,7 +483,6 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow: hidden;
 }
 .menu-list .card-content .title-container {
   display: flex;
@@ -543,7 +509,6 @@ html {
 }
 .menu-list .card-content .heart-icon .fa-regular {
   color: black;
-  transition: 200ms;
 }
 .menu-list .card-content .heart-icon .fa-solid {
   position: absolute; /*Positions the element absolutely within its containing element (.heart-icon container) */
@@ -555,7 +520,7 @@ html {
   left: 0;
   transition: 200ms;
 }
-.menu-list .card-content .heart-icon .fa-solid:hover, .menu-list .card-content .heart-icon .fa-solid:active {
+.menu-list .card-content .heart-icon .fa-solid:hover {
   opacity: 1;
 }
 .menu-list .menu-items {
@@ -629,6 +594,7 @@ html {
 }
 .menu-list .menu-items .item article .card-content:hover .white-cir {
   opacity: 1;
+  transform: rotate(360deg);
 }
 .menu-list .menu-items .item article .animation-box {
   width: 0;
@@ -640,6 +606,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
 }
 .menu-list .menu-items .item article .animation-box .white-cir {
   background-color: white;
@@ -648,6 +615,7 @@ html {
   opacity: 0;
   transition-duration: 1s;
   transition-property: background-color;
+  transition: transform 0.4s;
 }
 .menu-list .menu-items .item article .animation-box i {
   font-size: 14px;

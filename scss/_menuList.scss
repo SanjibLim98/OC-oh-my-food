@@ -53,7 +53,7 @@
         flex-direction: row;
         justify-content: space-between;
 
-        overflow: hidden;
+        
 
         .title-container {
            
@@ -84,9 +84,7 @@
             
             .fa-regular {
                 color: black;
-                transition: 200ms;
-                
-             
+            
             }
             
             .fa-solid {
@@ -97,8 +95,7 @@
                 opacity: 0;
                 left: 0;
                 transition: 200ms;
-                &:hover,
-                &:active {
+                &:hover {
                     opacity: 1;
                 }
                
@@ -121,6 +118,7 @@
             width: 100%;
             margin:0;
 
+           
             article {
     
                 background-color: white;
@@ -130,7 +128,7 @@
                 width: 90%; 
                 margin-top: 20px;
                 margin-bottom: 10px;
-            
+                
                 
 
                 .card-content {
@@ -188,6 +186,7 @@
                     }
                     .white-cir {
                         opacity: 1;
+                        transform: rotate(360deg);
                     }
                 }
               }
@@ -211,7 +210,11 @@
                     opacity: 0;
                     transition-duration: 1s;
                     transition-property: background-color;
+                    transition: transform 0.4s
+                  
                 }
+      
+                /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
                 i {
                     font-size: 14px;
                     color: $new-badge;

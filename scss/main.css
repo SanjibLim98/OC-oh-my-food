@@ -3,7 +3,7 @@
  animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
 body {
   position: relative; /*establishes it as the positioning context for the absolutely positioned child elements*/
-  height: 100vh; /* represents 105% of the viewport height */
+  height: 100vh; /* represents 100% of the viewport height */
 }
 
 .loader {
@@ -102,7 +102,8 @@ p {
   box-sizing: inherit;
 } /*Universal box sizing with inheritance */
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; /* specified width and height include the padding and border, but not the margin. 
+    This makes it easier to create predictable and consistent layouts. */
 }
 
 .main-container {
@@ -113,13 +114,7 @@ html {
   padding-right: 0.5rem;
 }
 
-.menu-list .title-container {
-  width: 100%;
-}
-.menu-list .title-container .menu-title {
-  font-size: 2rem;
-}
-
+/* There are 8 break points */
 @media (min-width: 305px) {
   .main-container {
     max-width: 305px; /*makes the container shirnk when the viewport touches */
@@ -227,34 +222,6 @@ html {
     height: inherit;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .main-container .header_container .header_card .arrow-container {
-    list-style: none;
-    text-decoration: none;
-  }
-  .main-container .header_container .header_card .arrow-container a {
-    list-style: none;
-    text-decoration: none;
-  }
-  .main-container .header_container .header_card .arrow-container a .fa-arrow-left {
-    margin-left: 30px;
-    margin-top: 5px;
-    display: flex;
-    color: black;
-    padding: 0;
-    font-size: 25px;
-    background-color: green;
-  }
-  .main-container .header_container .header_card .logo-container {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .main-container .header_container .header_card .logo-container .logo {
-    margin-top: 3px;
-    width: 180px;
-    height: auto;
   }
   .main-container .menu-list {
     width: 90%;
@@ -427,7 +394,8 @@ html {
   box-sizing: inherit;
 } /*Universal box sizing with inheritance */
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; /* specified width and height include the padding and border, but not the margin. 
+    This makes it easier to create predictable and consistent layouts. */
 }
 
 .main-container {
@@ -438,13 +406,7 @@ html {
   padding-right: 0.5rem;
 }
 
-.menu-list .title-container {
-  width: 100%;
-}
-.menu-list .title-container .menu-title {
-  font-size: 2rem;
-}
-
+/* There are 8 break points */
 @media (min-width: 305px) {
   .main-container {
     max-width: 305px; /*makes the container shirnk when the viewport touches */
@@ -552,34 +514,6 @@ html {
     height: inherit;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .main-container .header_container .header_card .arrow-container {
-    list-style: none;
-    text-decoration: none;
-  }
-  .main-container .header_container .header_card .arrow-container a {
-    list-style: none;
-    text-decoration: none;
-  }
-  .main-container .header_container .header_card .arrow-container a .fa-arrow-left {
-    margin-left: 30px;
-    margin-top: 5px;
-    display: flex;
-    color: black;
-    padding: 0;
-    font-size: 25px;
-    background-color: green;
-  }
-  .main-container .header_container .header_card .logo-container {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .main-container .header_container .header_card .logo-container .logo {
-    margin-top: 3px;
-    width: 180px;
-    height: auto;
   }
   .main-container .menu-list {
     width: 90%;
@@ -783,7 +717,8 @@ html {
   box-sizing: inherit;
 } /*Universal box sizing with inheritance */
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; /* specified width and height include the padding and border, but not the margin. 
+    This makes it easier to create predictable and consistent layouts. */
 }
 
 .main-container {
@@ -794,13 +729,7 @@ html {
   padding-right: 0.5rem;
 }
 
-.menu-list .title-container {
-  width: 100%;
-}
-.menu-list .title-container .menu-title {
-  font-size: 2rem;
-}
-
+/* There are 8 break points */
 @media (min-width: 305px) {
   .main-container {
     max-width: 305px; /*makes the container shirnk when the viewport touches */
@@ -908,34 +837,6 @@ html {
     height: inherit;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .main-container .header_container .header_card .arrow-container {
-    list-style: none;
-    text-decoration: none;
-  }
-  .main-container .header_container .header_card .arrow-container a {
-    list-style: none;
-    text-decoration: none;
-  }
-  .main-container .header_container .header_card .arrow-container a .fa-arrow-left {
-    margin-left: 30px;
-    margin-top: 5px;
-    display: flex;
-    color: black;
-    padding: 0;
-    font-size: 25px;
-    background-color: green;
-  }
-  .main-container .header_container .header_card .logo-container {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .main-container .header_container .header_card .logo-container .logo {
-    margin-top: 3px;
-    width: 180px;
-    height: auto;
   }
   .main-container .menu-list {
     width: 90%;
@@ -1150,7 +1051,8 @@ html {
   box-sizing: inherit;
 } /*Universal box sizing with inheritance */
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; /* specified width and height include the padding and border, but not the margin. 
+    This makes it easier to create predictable and consistent layouts. */
 }
 
 .main-container {
@@ -1161,13 +1063,7 @@ html {
   padding-right: 0.5rem;
 }
 
-.menu-list .title-container {
-  width: 100%;
-}
-.menu-list .title-container .menu-title {
-  font-size: 2rem;
-}
-
+/* There are 8 break points */
 @media (min-width: 305px) {
   .main-container {
     max-width: 305px; /*makes the container shirnk when the viewport touches */
@@ -1275,34 +1171,6 @@ html {
     height: inherit;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .main-container .header_container .header_card .arrow-container {
-    list-style: none;
-    text-decoration: none;
-  }
-  .main-container .header_container .header_card .arrow-container a {
-    list-style: none;
-    text-decoration: none;
-  }
-  .main-container .header_container .header_card .arrow-container a .fa-arrow-left {
-    margin-left: 30px;
-    margin-top: 5px;
-    display: flex;
-    color: black;
-    padding: 0;
-    font-size: 25px;
-    background-color: green;
-  }
-  .main-container .header_container .header_card .logo-container {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .main-container .header_container .header_card .logo-container .logo {
-    margin-top: 3px;
-    width: 180px;
-    height: auto;
   }
   .main-container .menu-list {
     width: 90%;
@@ -1676,15 +1544,16 @@ html {
   color: black;
 }
 .restaurants .restaurant-options article .card-content .heart-icon .fa-solid {
-  position: absolute;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  position: absolute; /*Positions the element absolutely within its containing element (.heart-icon container) */
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text; /*clip the background to the shape of the text (.fa-regular)*/
+  color: transparent; /*ensures that the text itself is not visible, allowing the gradient to be seen through the shape of the outlined heart*/
   opacity: 0;
   left: 0;
   transition: 200ms;
 }
-.restaurants .restaurant-options article .card-content .heart-icon .fa-solid:hover, .restaurants .restaurant-options article .card-content .heart-icon .fa-solid:active {
+.restaurants .restaurant-options article .card-content .heart-icon .fa-solid:hover {
   opacity: 1;
 }
 
